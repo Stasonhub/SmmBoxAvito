@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "SmmBox. Копирование постов с сайта Avito.",
+  "version":"1.0.0",
+  "description": "",
+  "permissions": [ "http://www.avito.ru/*", "https://www.avito.ru/*" ],
+  "content_scripts":[
+    {
+      "matches": [ "http://www.avito.ru/*", "https://www.avito.ru/*" ],
+      "js": ["smmbox.js", "jquery.js", "main.js"]
+    }
+  ],
+  "icons":{
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}
